@@ -3,10 +3,10 @@ package RandomNumbers;
 import java.util.Random;
 
 abstract class Playeer {
-    private String name;
-    private int number;
+    private String name;    // имя игрока
+    private int number;     // число загаданное игроком
 
-    public Playeer() {
+    public Playeer() {      // автоматическая генерациячисла от 1до 10
         number = new Random().nextInt(10) +1;
     }
 
@@ -20,5 +20,9 @@ abstract class Playeer {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 }
